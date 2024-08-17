@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	align-items: flex-start;
+	aside {
+		width: 30%;
+		height: 500px;
+		border-radius: 15;
+	}
+	.results {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+		box-shadow: inset 0 0 5px rgb(255, 255, 255, 0.1);
+		border-radius: 15;
+	}
+}

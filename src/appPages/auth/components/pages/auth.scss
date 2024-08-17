@@ -1,0 +1,143 @@
+/* auth.scss */
+
+.auth-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #121212; /* Dark background for the entire page */
+	color: #e0e0e0; /* Light text color for better readability on dark background */
+
+	section {
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		max-width: 380px;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #1e1e1e; /* Slightly lighter dark background for the form */
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		margin-bottom: 1.25rem;
+		color: #ffffff; /* White color for the heading */
+		text-align: center;
+		font-weight: 500;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	input {
+		padding: 0.75rem;
+		border: 1px solid #333;
+		border-radius: 4px;
+		font-size: 1rem;
+		background-color: #2c2c2c; /* Dark background for inputs */
+		color: #e0e0e0; /* Light text color for inputs */
+		transition: border-color 0.3s, background-color 0.3s;
+		&:not(.isLast) {
+			margin-bottom: 0.75rem;
+		}
+	}
+
+	input::placeholder {
+		color: #888; /* Placeholder text color */
+	}
+
+	input:focus {
+		border-color: #da22ff; /* Light purple border color on focus */
+		background-color: #333333; /* Slightly darker background on focus */
+		outline: none;
+	}
+
+	button {
+		padding: 0.55rem;
+		border: none;
+		border-radius: 4px;
+		background-color: #da22ff;
+		color: #121212;
+		font-size: 1rem;
+		cursor: pointer;
+		font-weight: 500;
+		transition: background-color 0.3s, transform 0.2s;
+
+		&.redirect-btn {
+			padding: 0;
+			background-color: transparent;
+			color: white;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	button:disabled {
+		background-color: #555;
+		cursor: not-allowed;
+	}
+
+	.forgot-password-container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.forgot-password {
+		background: none;
+		border: none;
+		color: #da22ff;
+		cursor: pointer;
+		font-size: 0.875rem;
+	}
+
+	.forgot-password:hover {
+		text-decoration: underline;
+	}
+
+	.options {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: center;
+		gap: 0.8rem;
+		margin-top: 0.8rem;
+		&.wrap {
+			flex-wrap: wrap;
+			gap: 0;
+			* {
+				margin: 0;
+			}
+		}
+	}
+	.message {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 5px 0;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.error:not(.last) {
+		margin-bottom: 3px;
+	}
+
+	span {
+		color: #888; /* Slightly lighter grey color for span text */
+	}
+
+	a {
+		color: #da22ff; /* Light purple color for links */
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+
+	a:hover {
+		color: #9c27b0; /* Slightly darker purple on hover */
+		text-decoration: underline;
+	}
+}
