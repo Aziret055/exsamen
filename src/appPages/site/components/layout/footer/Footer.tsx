@@ -8,7 +8,7 @@ const Footer: FC = () => {
 				<div className="container">
 					<div className={scss.content}>
 						<p>Copyright © 2024. All rights are reserved</p>
-						<p>By Elcho911 (ElchoCrud)</p>
+						<p>By Aziret (Aziret)</p>
 					</div>
 				</div>
 			</footer>
