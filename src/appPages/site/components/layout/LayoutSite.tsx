@@ -1,10 +1,10 @@
 'use client';
-import { FC, ReactNode, useEffect, useState } from 'react';
-import scss from './LayoutSite.module.scss';
-import PreLoader from '@/ui/preLoader/PreLoader';
-import Header from './header/Header';
-import Footer from './footer/Footer';
 import { useGetMeQuery } from '@/redux/api/auth';
+import PreLoader from '@/ui/preLoader/PreLoader';
+import { FC, ReactNode, useEffect, useState } from 'react';
+import Footer from './footer/Footer';
+import Header from './header/Header';
+import scss from './LayoutSite.module.scss';
 
 interface LayoutSiteProps {
 	children: ReactNode;
